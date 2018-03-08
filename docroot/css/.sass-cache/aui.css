@@ -124,13 +124,6 @@
 
   /* Icon rotations and mirroring */
   /* ensure rotation occurs inside anchor tags */
-  @font-face {
-    font-family: 'fontawesome-alloy';
-    src: url("fonts/fontawesome-alloy.eot");
-    src: url("fonts/fontawesome-alloy.eot?#iefix") format("embedded-opentype"), url("fonts/fontawesome-alloy.woff") format("woff"), url("fonts/fontawesome-alloy.ttf") format("truetype"), url("fonts/fontawesome-alloy.svg#fontawesome-alloy") format("svg");
-    font-weight: normal;
-    font-style: normal; }
-
   /* Use the following CSS code if you want to use data attributes for inserting your icons */
   /* Use the following CSS code if you want to have a class per icon */
   /*
@@ -768,7 +761,8 @@
   .aui fieldset {
     padding: 0;
     margin: 0;
-    border: 0; }
+    border: 0;
+    min-width: 0; }
   .aui legend {
     display: block;
     width: 100%;
@@ -3772,7 +3766,9 @@
       background-color: #fdfaec;
       border: 1px solid #b0ad95;
       max-width: 400px;
-      text-align: left; }
+      overflow-wrap: break-word;
+      text-align: left;
+      word-wrap: break-word; }
     .aui .tooltip-help.top .tooltip-arrow {
       border-top-color: #b0ad95; }
     .aui .tooltip-help.right .tooltip-arrow {

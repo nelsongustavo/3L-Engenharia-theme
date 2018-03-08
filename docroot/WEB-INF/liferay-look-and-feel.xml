@@ -5,7 +5,5 @@
 	<compatibility>
 		<version>6.2.1+</version>
 	</compatibility>
-	<theme id="3L-Engenharia" name="3L Engenharia">
-		<template-extension>ftl</template-extension>
-	</theme>
+	<theme id="3L" name="3L"></theme>
 </look-and-feel>

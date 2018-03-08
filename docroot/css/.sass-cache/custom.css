@@ -28,6 +28,7 @@
       margin: 0 auto; }
     .aui #wrapper div#content {
       padding: 0;
+      margin-top: 0.7em;
       background: #eeeeee;
       border-top: 4px solid #e22f3a; }
       .aui #wrapper div#content .quadro {
@@ -94,7 +95,7 @@
           padding: 0px; }
           .aui #wrapper div#content .listagem .portlet .portlet-content .asset-abstract {
             float: left;
-            width: 50%;
+            width: 49%;
             margin-bottom: 4em; }
             .aui #wrapper div#content .listagem .portlet .portlet-content .asset-abstract .asset-more {
               display: none; }
@@ -316,9 +317,24 @@
             height: 2em; }
         .aui #wrapper div#content .andamento-obra .projeto, .aui #wrapper div#content .andamento-obra .escavacao, .aui #wrapper div#content .andamento-obra .fundacao, .aui #wrapper div#content .andamento-obra .estrutura, .aui #wrapper div#content .andamento-obra .instalacoes, .aui #wrapper div#content .andamento-obra .acabamento {
           margin: 0; }
+  .aui body.page-maximized.signed-out .home {
+    margin-top: 0 !important; }
   .aui #heading h1.site-title {
-    width: 115px !important;
+    width: 150px !important;
     float: left !important; }
+    .aui #heading h1.site-title a {
+      background-color: white;
+      -webkit-border-radius: 2em;
+      -moz-border-radius: 2em;
+      -ms-border-radius: 2em;
+      -o-border-radius: 2em;
+      border-radius: 2em;
+      height: 4em;
+      width: 4em;
+      text-align: center; }
+      .aui #heading h1.site-title a img {
+        max-width: 67%;
+        margin-top: 0.4em; }
     .aui #heading h1.site-title a:hover {
       text-decoration: none; }
     .aui #heading h1.site-title .site-name {
@@ -348,7 +364,8 @@
     margin-bottom: 0; }
   .aui .estilo-cont h1 {
     margin: 1em 0 0.3em 0;
-    font-weight: 100; }
+    font-weight: 100;
+    font-style: normal; }
   .aui .estilo-cont .fieldset-legend .legend {
     margin: 1em 0 0.3em 0;
     font-weight: 100; }
@@ -361,6 +378,45 @@
     margin-bottom: 6px; }
     .aui .estilo-cont .control-group input[type="text"], .aui .estilo-cont .control-group select, .aui .estilo-cont .control-group textarea {
       width: 42.5em; }
+  .aui .estilo-cont1 h1 {
+    margin: 1em 0 0.3em 0;
+    font-weight: 100; }
+  .aui .estilo-cont1 .lfr-asset-description {
+    margin: 0em 0 1em 0;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 2em; }
+  .aui .estilo-cont1 .lfr-asset-metadata {
+    display: none; }
+  .aui .estilo-cont1 .accordion-group {
+    background-color: white; }
+  .aui .estilo-cont1 .table-cell span.entry-title {
+    width: 62%; }
+  .aui .estilo-cont1 .portlet-topper {
+    background-color: transparent;
+    color: black;
+    position: absolute;
+    top: -7em;
+    left: 0; }
+    .aui .estilo-cont1 .portlet-topper h1 {
+      margin: 1em 0 0.3em 0;
+      font-weight: 100;
+      font-style: normal;
+      font-size: 2em; }
+      .aui .estilo-cont1 .portlet-topper h1 portlet-title-text {
+        max-width: 100%; }
+  .aui .estilo-cont1 .fieldset-legend .legend {
+    margin: 1em 0 0.3em 0;
+    font-weight: 100; }
+  .aui .estilo-cont1 img.layout {
+    width: 100%;
+    border: 2em solid white;
+    box-sizing: border-box;
+    margin-top: 1em; }
+  .aui .estilo-cont1 .control-group {
+    margin-bottom: 6px; }
+    .aui .estilo-cont1 .control-group input[type="text"], .aui .estilo-cont1 .control-group select, .aui .estilo-cont1 .control-group textarea {
+      width: 96%; }
   .aui .taglib-header {
     border-bottom: 0px solid transparent;
     margin-bottom: 0em; }
@@ -377,9 +433,20 @@
     background-color: #55B8EC; }
   .aui .dockbar.navbar .nav > li > a {
     margin: 0 5px 0 0;
-    padding: 6px 10px; }
+    padding: 6px 10px;
+    color: white;
+    text-decoration: none;
+    text-shadow: 0 0px 0 transparent;
+    background: transparent;
+    background-image: none;
+    line-height: 2.3em; }
     .aui .dockbar.navbar .nav > li > a:hover {
       background-color: #2FA4F5; }
+  .aui .dockbar.navbar .divider-vertical {
+    height: 40px;
+    margin: 0 9px;
+    border-left: 1px solid #1277CB;
+    border-right: 1px solid #2A93DB; }
   .aui .dockbar .info-button {
     top: 9px; }
     .aui .dockbar .info-button a {
@@ -402,6 +469,7 @@
       text-decoration: underline; }
   .aui .dockbar .navbar-inner, .aui .dockbar-split .dockbar .navbar-inner {
     background-color: #118ade;
+    border: 1px solid #1662A3;
     background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #118ade), color-stop(47%, #118ade), color-stop(100%, #1273c7));
     background-image: -webkit-linear-gradient(#118ade 0%, #118ade 47%, #1273c7 100%);
     background-image: -moz-linear-gradient(#118ade 0%, #118ade 47%, #1273c7 100%);
@@ -494,6 +562,7 @@
     border-width: 0;
     min-height: 36px;
     padding: 0;
+    padding-top: 1.5em;
     -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0.065);
     -moz-box-shadow: 0 0px 0px rgba(0, 0, 0, 0.065);
     box-shadow: 0 0px 0px rgba(0, 0, 0, 0.065); }

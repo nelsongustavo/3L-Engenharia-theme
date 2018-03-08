@@ -35,6 +35,7 @@ $dockbarOpenGradientStart: #0EA6F9;
 		}
 		div#content{
 			padding: 0;
+			margin-top: 0.7em;
 			background: #eeeeee;
 			border-top: 4px solid #e22f3a;
 			& .quadro{
@@ -122,7 +123,7 @@ $dockbarOpenGradientStart: #0EA6F9;
 						padding: 0px;
 						.asset-abstract {
 							float: left;
-							width: 50%;
+							width: 49%;
 							margin-bottom: 4em;
 							.asset-more{
 								display: none;
@@ -396,10 +397,24 @@ $dockbarOpenGradientStart: #0EA6F9;
 			} 
 		}
 	}
+	body.page-maximized.signed-out .home{
+		margin-top: 0 !important;
+	}
 	
 	#heading h1.site-title{
-		width: 115px !important;
+		width: 150px !important;
 		float: left !important;
+		a{
+			background-color: white;
+			@include border-radius(2em);
+			height: 4em;
+			width: 4em;
+			text-align: center;
+			img{
+				max-width: 67%;
+				margin-top: 0.4em;
+			}
+		}
 		a:hover {
 			text-decoration: none;
 			img{
@@ -449,6 +464,7 @@ $dockbarOpenGradientStart: #0EA6F9;
 		h1{
 			margin: 1em 0 0.3em 0;
 			font-weight: 100;
+			font-style: normal;
 		}
 		.fieldset-legend{
 			.legend{
@@ -469,6 +485,61 @@ $dockbarOpenGradientStart: #0EA6F9;
 			}
 		}
 	}
+	.estilo-cont1{
+		h1{
+			margin: 1em 0 0.3em 0;
+			font-weight: 100;
+		}
+		.lfr-asset-description {
+		  margin: 0em 0 1em 0;
+		  font-weight: 100;
+		  font-style: normal;
+		  font-size: 2em;
+		}
+		.lfr-asset-metadata{
+			display: none;
+		}
+		.accordion-group{
+			  background-color: white;
+		} 
+		.table-cell span.entry-title {
+		  width: 62%;
+		}
+		.portlet-topper {
+			background-color: transparent;
+			color: black;
+			position: absolute;
+			top: -7em;
+  			left: 0;
+			h1 {
+				margin: 1em 0 0.3em 0;
+				font-weight: 100;
+				font-style: normal;
+				font-size: 2em;
+				portlet-title-text {
+  					max-width: 100%;
+				}
+			}
+		}
+		.fieldset-legend{
+			.legend{
+				margin: 1em 0 0.3em 0;
+				font-weight: 100;
+			}
+		}
+		img.layout {
+			width: 100%;
+			border: 2em solid white;
+			box-sizing: border-box;
+			margin-top: 1em;
+		}
+		.control-group {
+			margin-bottom: 6px;
+			input[type="text"], select, textarea{
+				width: 96%;
+			}
+		}
+	}
 	.taglib-header {
 		border-bottom: 0px solid transparent;
 		margin-bottom: 0em;
@@ -482,7 +553,7 @@ $dockbarOpenGradientStart: #0EA6F9;
 	}
 	/* ---------- Dockbar ---------- */
 
-	/* .dockbar {
+	.dockbar {
 		&.navbar {
 			.nav {
 				li {
@@ -507,12 +578,23 @@ $dockbarOpenGradientStart: #0EA6F9;
 					> a {
 						margin: 0 5px 0 0;
 						padding: 6px 10px;
-
+						color: white;
+						text-decoration: none;
+						text-shadow: 0 0px 0 transparent;
+						background: transparent;
+						background-image: none;
+						line-height: 2.3em;
 						&:hover {
 							background-color: #2FA4F5;
 						}
 					}
 				}
+			}
+			.divider-vertical {
+				height: 40px;
+				margin: 0 9px;
+				border-left: 1px solid #1277CB;
+				border-right: 1px solid #2A93DB;
 			}
 		}
 
@@ -558,6 +640,7 @@ $dockbarOpenGradientStart: #0EA6F9;
 	.dockbar, .dockbar-split .dockbar {
 		.navbar-inner {
 			background-color: $dockbarGradientStart;
+			border: 1px solid #1662A3;
 
 			@include background-image(linear-gradient($dockbarGradientStart 0%, $dockbarGradientStart 47%, $dockbarGradientEnd 100%));
 
@@ -641,7 +724,7 @@ $dockbarOpenGradientStart: #0EA6F9;
 				}
 			}
 		}
-	} */
+	}
 
 	/* ---------- Main navigation ---------- */
 
@@ -720,6 +803,7 @@ $dockbarOpenGradientStart: #0EA6F9;
 			border-width: 0;
 			min-height: 36px;
 			padding: 0;
+			padding-top: 1.5em;
 			-webkit-box-shadow: 0 0px 0px rgba(0,0,0,0.065);
 			-moz-box-shadow: 0 0px 0px rgba(0,0,0,0.065);
 			box-shadow: 0 0px 0px rgba(0,0,0,0.065);

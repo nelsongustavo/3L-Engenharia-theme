@@ -6,4 +6,5 @@
 
 	<property name="theme.parent" value="_styled" />
 	<property name="theme.type" value="ftl" />
+	<property name="theme.type" value="vm" />
 </project>
